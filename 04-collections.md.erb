@@ -1,9 +1,9 @@
 ---
-title: Collections
+title: ስብስቦች
 slug: collections
 date: 0004/01/01
 number: 4
-contents: Learn about Meteor's core feature, realtime collections.|Understand how Meteor's data synchronization works.|Integrate collections with our templates.|Turn our basic prototype into a functioning realtime application!
+contents: ስለሚትዩር መሰረታዊ ገጽታ፤ ቅፅበታዊ ስብስቦች ይማሩ።|የሚትዩር ዳታ ሥምሪያ እዴት እንደሚሰራ ይገንዘቡ። |ስብስቦችን ከቅንብር ደንቦቻችን ጋር ያዋህዱ።|መሰረታዊ ናሙናችንን ወደ የሚሰራ ቅፅበታዊ መተግበሪያ ይለውጡ!
 paragraphs: 72
 ---
 
@@ -32,7 +32,7 @@ Posts = new Meteor.Collection('posts');
 
 <% note do %>
 
-### To Var Or Not To Var?
+### እን"Var"ው ወይስ ኣን"Var"ው?
 
 ////
 
@@ -42,11 +42,11 @@ Posts = new Meteor.Collection('posts');
 
 <% note do %>
 
-### Console vs Console vs Console
+### ኮንሶል ከኮንሶል ከኮንሶል
 
 ////
 
-#### Terminal
+#### ተርሚናል
 
 <%= screenshot "terminal", "The Terminal" %>
 
@@ -55,7 +55,7 @@ Posts = new Meteor.Collection('posts');
 - ////
 - ////
 
-#### Browser Console
+#### የማሰሻ ኮንሶል
 
 <%= screenshot "browser-console", "The Browser Console" %>
 
@@ -64,7 +64,7 @@ Posts = new Meteor.Collection('posts');
 - ////
 - ////
 
-#### Mongo Shell
+#### ሞንጎ ሼል
 
 <%= screenshot "mongo-shell", "The Mongo Shell" %>
 
@@ -77,7 +77,7 @@ Posts = new Meteor.Collection('posts');
 
 <% end %>
 
-### Server-Side Collections
+### የኣገልጋይ-በኩል ስብስቦች
 
 ////
 
@@ -93,7 +93,7 @@ Posts = new Meteor.Collection('posts');
 
 <% note do %>
 
-### Mongo on Meteor.com
+### ሞንጎ በMeteor.com ላይ
 
 ////
 
@@ -103,7 +103,7 @@ Posts = new Meteor.Collection('posts');
 
 ////
 
-### Client-Side Collections
+### የተገልጋይ-በኩል ስብስቦች
 
 ////
 
@@ -113,13 +113,13 @@ Posts = new Meteor.Collection('posts');
 
 <% note do %>
 
-### Introducing MiniMongo
+### ስለሚኒሞንጎ መግቢያ
 
 ////
 
 <% end %>
 
-### Client-Server Communication
+### የተገልጋይ-ኣገልጋይ ግንኙነት
 
 ////
 
@@ -176,13 +176,13 @@ Posts = new Meteor.Collection('posts');
 
 ////
 
-### Keeping it Real-time
+### ቅፅበታዊ ያድርጉት
 
 ////
 
 ////
 
-### Populating the Database
+### የውሂብ ቋቱን መሙላት
 
 ////
 
@@ -227,7 +227,7 @@ if (Posts.find().count() === 0) {
 
 ////
 
-### Wiring the data to our HTML with helpers
+### ኣጋዦችን ተጠቅሞ ውሂብን ወደ HTML መጻፍ
 
 ////
 
@@ -254,7 +254,7 @@ Template.postsList.helpers({
 
 <% note do %>
 
-### Find & Fetch
+### ፈልግ እና ኣምጣ
 
 ////
 
@@ -287,7 +287,7 @@ Template.postsList.helpers({
 
 <% note do %>
 
-### Inspecting DOM Changes
+### የDOM ለውጦችን መመርመር
 
 ////
 
@@ -295,7 +295,7 @@ Template.postsList.helpers({
 
 <% end %>
 
-### Connecting Collections: Publications and Subscriptions
+### ስብስቦችን ማገናኘት፤ ስርጭቶች እና ደበኝነቶች
 
 ////
 
@@ -329,6 +329,6 @@ Meteor.subscribe('posts');
 
 ////
 
-### Conclusion
+### መደምደሚያ
 
 ////
