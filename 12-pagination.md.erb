@@ -1,9 +1,9 @@
 ---
-title: Pagination
+title: መስፈር
 slug: pagination
 date: 0012/01/01
 number: 12
-contents: Learn more about Meteor's subscriptions, and how we can use them to control data.|Implement infinite-style pagination.|Use the `iron-router-progress` package to implement a nifty iOS-style progress bar.|Create a special subscription to deal with direct links to posts page.
+contents: ስለሚትዩር ደንበኝነቶች በበለጠ ይማሩ እናም እንዴት በነሱ ውሂብን መቆጣጠር እንደሚችሉ ይወቁ።|ይማያልቅ መስፈርን ይተግብሩ።|የ`iron-router-progress` ጥቅልን በመጠቀም iOS-ዓይነት የግስገሳ ኣሞሌ ይተግብሩ።|ወደ እትም ገጾች በቀጥተኛ  የሚወስዱን ኣገናኞችን ልዩ ደንበኝነትን በመፍጠር ይስሩዋቸው።
 paragraphs: 67
 ---
 
@@ -15,7 +15,7 @@ paragraphs: 67
 
 ////
 
-### Adding More Posts
+### እትሞችን ይጨምሩ
 
 ////
 
@@ -55,7 +55,7 @@ if (Posts.find().count() === 0) {
 
 <%= commit "12-1", "Added enough posts that pagination is necessary." %>
 
-### Infinite Pagination
+### የማያበቃ መስፈር
 
 ////
 
@@ -137,7 +137,7 @@ Meteor.publish('notifications', function() {
 
 <% note do %>
 
-### Passing Parameters
+### ግቤቶች ማቀበል
 
 ////
 
@@ -223,7 +223,7 @@ Router.map(function() {
 
 <% note do %>
 
-### Why Not Pages?
+### ገልጾች ለምን ኣይሆኑም?
 
 ////
 
@@ -245,7 +245,7 @@ Router.map(function() {
 
 <% end %>
 
-### Creating a Route Controller
+### የመንገድ መፈለጊያ መቆጣጠሪያ መፍጠር
 
 ////
 
@@ -290,7 +290,7 @@ Router.map(function() {
 
 <%= commit "12-3", "Refactored postsLists route into a RouteController." %>
 
-### Adding A Load More Link
+### "ተጨማሪ ጫን" ማገናኛ መጨመር
 
 ////
 
@@ -371,13 +371,13 @@ PostsListController = RouteController.extend({
 
 <% note do %>
 
-### Count vs Length
+### ብዛት ወይስ እርዝመት
 
 ////
 
 <% end %>
 
-### A Better Progress Bar
+### የተሻለ የግስገሳ ኣሞሌ
 
 ////
 
@@ -410,7 +410,7 @@ Router.map(function() {
 
 <%= commit "12-5", "Use the iron-router-progress package to make pagination nicer." %>
 
-### Accessing Any Post
+### ማንኛውንም እትም ማግኘት
 
 ////
 

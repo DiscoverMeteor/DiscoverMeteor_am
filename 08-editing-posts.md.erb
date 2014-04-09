@@ -1,9 +1,9 @@
 ---
-title: Editing Posts
+title: እትመትን ኣርትእ
 slug: editing-posts
 date: 0008/01/01
 number: 8
-contents: Add a form for editing your posts.|Set up edit permissions.|Restrict which properties can be edited.
+contents: እተመቶቾን ለማረም የሚያስችሎትን ቅጽ ይጨምሩ።|ለማረም የሚያስችለውን ፍቃድ ያሰናዱ።|የትኞቹ መገለጫዋች ማረም እንደሚቻል ይገድብ።
 paragraphs: 29
 ---
 
@@ -50,7 +50,7 @@ Router.before(requireLogin, {only: 'postSubmit'});
 <%= caption "lib/router.js" %>
 <%= highlight "12~15" %>
 
-### The Post Edit Template
+### የእትም ኣርትእ ቅንብር ደንብ
 
 ////
 
@@ -134,7 +134,7 @@ Template.postEdit.events({
 
 ////
 
-### Adding Links
+### መገናኛዎችን መጨመር
 
 ////
 
@@ -178,7 +178,7 @@ Template.postItem.helpers({
 
 ////
 
-### Setting Up Permissions
+### ፈቃዶችን ማሰናዳት
 
 ////
 
@@ -244,7 +244,7 @@ Posts.deny({
 
 <% note do %>
 
-### Method Calls vs Client-side Data Manipulation
+### ሜተድ ጥሪዎች ከተገልጋይ-በኩል የውሂብ መነካካት ጋር ሲነጻፀሩ
 
 ////
 

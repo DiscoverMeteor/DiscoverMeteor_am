@@ -1,9 +1,9 @@
 ---
-title: Errors
+title: ስህተቶች
 slug: errors
 date: 0009/01/01
 number: 9
-contents: Create a better mechanism for displaying errors and messages.|Learn how to use `Template.rendered` to know when a user has seen an error.|Use a router filter to make sure errors are only seen once.
+contents: የተሻለ የስህትቶች እና መልዕክቶች ማቀረቢያ ይፍጠሩ።|እንዴት `Template.rendered` ተጠቅመው ኣንድ ተጠቃሚ ስህተት ማየቱን ማወቅ እንደሚችሉ ይማሩ።|ስህተቶች ኣንዴ ብቻ እንዲታዩ የመንገድ መፈለጊያ ማጣሪያዎች ይጠቀሙ።
 paragraphs: 31
 ---
 
@@ -11,7 +11,7 @@ paragraphs: 31
 
 ////
 
-### Introducing Local Collections
+### ስለቅርብ ኣካባቢ ስብስቦች መግቢያ
 
 ////
 
@@ -38,7 +38,7 @@ throwError = function(message) {
 
 ////
 
-### Displaying errors
+### ስህተቶችን ማሳየት
 
 ////
 
@@ -78,7 +78,7 @@ throwError = function(message) {
 
 <% note do %>
 
-### Twin Templates
+### መንታ ቅንብር ደንቦች
 
 ////
 
@@ -99,7 +99,7 @@ Template.errors.helpers({
 
 <%= commit "9-1", "Basic error reporting." %>
 
-### Creating errors
+### ስህተቶችን መፍጠር
 
 ////
 
@@ -139,7 +139,7 @@ Template.postSubmit.events({
 
 <%= screenshot "9-1", "Triggering an error" %>
 
-### Clearing Errors
+### ስህተቶችን ማጥራት
 
 ////
 
@@ -212,7 +212,7 @@ Template.error.rendered = function() {
 
 <% note do %>
 
-### The `rendered` callback
+### `rendered` መልሶ-ጥሪ
 
 ////
 

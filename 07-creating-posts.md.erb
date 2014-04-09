@@ -1,9 +1,9 @@
 ---
-title: Creating Posts
+title: እትሞችን መፍጠር
 slug: creating-posts
 date: 0007/01/01
 number: 7
-contents: Learn how to submit a post client-side.|Implement a simple security check.|Restrict access to the post submit form.|Learn to use a server-side Method for added security.
+contents: ኣንድን እትም እንዴት ከተገልጋይ-በኩል ማስገባት እንደሚችሉ ይማሩ።|ቀለልያል የደንነት መርመራ ይተግብሩ።|ለእትም ማስገቢያው ቅጽ መድረሻን ይገደብት።|የኣገልጋይ-በኩል ሜተድ ተጠቅመው ተጨማሪ ድንነት መስራት እንደሚችሉ ይማሩ።
 paragraphs: 60
 ---
 
@@ -11,7 +11,7 @@ paragraphs: 60
 
 ////
 
-### Building The New Post Page
+### ኣዲሱን የእትም ገጽ መገንባት
 
 ////
 
@@ -40,7 +40,7 @@ Router.map(function() {
 
 ////
 
-### Adding A Link To The Header
+### ለርዕሱ ኣንገናኝ ይጨምሩለት
 
 ////
 
@@ -142,7 +142,7 @@ Template.postSubmit.events({
 
 ////
 
-### Adding Some Security
+### ድንነትን መጨምር
 
 ////
 
@@ -157,7 +157,7 @@ $ meteor remove insecure
 
 ////
 
-### Allowing Post Inserts
+### የእትመት ማስገባትን መፍቀድ
 
 ////
 
@@ -192,7 +192,7 @@ Posts.allow({
 
 ////
 
-### Securing Access To The New Post Form
+### የኣዲሱ የእትም ቅጽን መድረሻ በደንነት መጠበቅ
 
 ////
 
@@ -302,7 +302,7 @@ Router.before(requireLogin, {only: 'postSubmit'});
 
 ////
 
-### Meteor Method: Better Abstraction and Security
+### ሚትዩር ሜተድ: የተሻለ መደበቅ እና ደንነት
 
 ////
 
@@ -402,7 +402,7 @@ Meteor.methods({
 
 ////
 
-### Sorting Posts
+### እትሞችን በቀደምተከተል
 
 ////
 
